@@ -65,4 +65,5 @@ chmod 777 autogen.sh
 ./autogen.sh
 CFLAGS="-march=native" ./configure
 make
+mv * $BUILD_DIR/
 echo "done"
