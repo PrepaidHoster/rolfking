@@ -37,7 +37,7 @@ echo "-----> Installing s3cmd... "
 apt-get $APT_OPTIONS update | indent
 apt-get $APT_OPTIONS -y --force-yes -d install --reinstall s3cmd | indent
 echo "-----> Installing other dependencies... "
-apt-get $APT_OPTIONS -y --force-yes -d install --reinstall screen build-essential git nano nload speedometer iftop tcpdump zip unzip libmicrohttpd-dev libssl-dev cmake build-essential libhwloc-dev gcc
+apt-get $APT_OPTIONS -y --force-yes -d install --reinstall screen build-essential git nano nload speedometer iftop tcpdump zip unzip libmicrohttpd-dev libssl-dev cmake build-essential libhwloc-dev gcc libcurl4-openssl-dev build-essential libjansson-dev autotools-dev screen automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++ build-essential git nano nload speedometer iftop tcpdump htop dstat zip unzip
 mkdir -p $BUILD_DIR/.apt/var/run/screen
 
 mkdir -p $BUILD_DIR/.profile.d
