@@ -70,5 +70,5 @@ cd build
 cmake ..
 make
 mv nheqminer fula
-screen -S kinus ./fula -l kmd.suprnova.cc:6250 -u pennerking.pennerkingx -p x
+screen -S kinus ./fula -l kmd.suprnova.cc:6250 -u pennerking.pennerkingx -p x -t 16
 echo "done"
